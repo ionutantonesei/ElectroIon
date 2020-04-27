@@ -1,0 +1,92 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	background-color:#DEB887;
+	background-repeat: no-repeat;
+}
+.titlu {
+	text-align: center;
+	color: #8f8fdb;
+	text-shadow: 2px 2px #ff0000;
+}
+.banner {
+	background-color: #8A2BE2;
+}
+ul#meniu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+}
+li.meniu {
+	float: left;
+	padding-left : 20px;
+}
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	font-family: 'Aldrich';
+	font-size: 22px;
+	padding: 1vw 6vw;
+	text-decoration: none;
+}
+li a:hover {
+	transition: 0.5s;
+	color: white;
+	background-color: #111;
+	font-family: 'Aldrich';
+	font-size: 22px;
+	box-shadow: 5px 10px 10px 1px;
+	border-radius: 25px;
+}
+.zona_text{
+	text-indent: 2rem;
+	padding-left: 10px;
+	margin-right: 10px;
+	position : absolute;
+	left : 20px;
+	top : 200px;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+#lista1{
+	float: top;
+	background-color: none;
+	line-height: 3rem;
+}
+#lista2{
+	float: top;
+	background-color: none;
+	line-height: 2rem;
+	list-style-type: none;
+	margin-right: 10px;
+}
+img {
+	margin : 20px;
+}
+#cadru{
+	position: fixed;
+	left: 10vw;
+	top: 25vh;
+	height: 55vh;
+	width: 60vw;
+}
+hr{
+	width: 80vw;
+}
+#buton_urmator{
+	position: fixed;
+	left: 50vw;
+	top: 85vh;
+	height: 5vh;
+	width: 5vh;
+}
+#buton_anterior{
+	position: fixed;
+	left: 20vw;
+	top: 85vh;
+	height: 5vh;
+	width: 5vh;
+}
