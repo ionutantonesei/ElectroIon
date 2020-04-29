@@ -3,9 +3,9 @@ const ctx = interactiv.getContext('2d');
 
 ctx.fillStyle = 'red';
 ctx.fillRect (5,5,10,10);
-ctx.fillRect (590,590,10,10);
+ctx.fillRect (200,300,10,10);
 ctx.fillStyle = 'green';
-ctx.fillRect (300,300,100,50);
+ctx.fillRect (100,100,100,50);
 
 ctx.clearRect (310,310,80,30);
 
