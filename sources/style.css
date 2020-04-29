@@ -90,3 +90,13 @@ hr{
 	height: 5vh;
 	width: 5vh;
 }
+canvas {
+	position: relative;
+	top: 15vh;
+	left: 1vw;
+}
+footer{
+	position: fixed;
+	top: 930px;
+	left: 1680px;
+}
