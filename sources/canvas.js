@@ -1,18 +1,9 @@
 const canvas = document.getElementById('interactiv');
 const ctx = interactiv.getContext('2d');
 
-ctx.fillStyle = 'red';
-ctx.fillRect (5,5,10,10);
-ctx.fillRect (200,300,10,10);
-ctx.fillStyle = 'green';
-ctx.fillRect (100,100,100,50);
+ctx.strokeStyle = "hsl(120, 100%, 10%)";
+ctx.strokeRect (10,15,200,300);
 
-ctx.clearRect (310,310,80,30);
-
+ctx.fillStyle = 'black';
 ctx.font = '30px Arial';
-ctx.fillStyle = 'green';
-ctx.fillText ('Exemplu de canvas',10,100);
-
-ctx.lineWidth = 1;
-ctx.strokeStyle = 'purple'
-ctx.strokeText ('Exemplu de canvas',10,200);
+ctx.fillText ('Un test' , 15 , 170);
