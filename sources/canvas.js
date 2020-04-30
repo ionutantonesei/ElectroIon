@@ -1,45 +1,57 @@
 const canvas = document.getElementById('interactiv');
 const ctx = interactiv.getContext('2d');
-const cerc = {
-    x : 150,
-    y : 100,
-    raza : 25,
-    dx : 3,
-    dy : 3,
+const parametrii = {
+    x : 300,
+    y : 300,
+    amplitudine1 : -230,
+    amplitudine2 : +230,
+    frecventa : 50,
+    faza: 0,
+    amplitudine_timp : 0,
+    frecventa_timp: 0,
+    faza_timp: 1
 }
 
-function desenare_cerc(){
-ctx.beginPath();
-ctx.lineWidth = 5;
-ctx.arc(cerc.x,cerc.y,cerc.raza,0,Math.PI*2);
-ctx.fill();
+function desenare(){
+    ctx.lineWidth = 1;
+    a = parametrii.amplitudine1;
+    b = parametrii.amplitudine2;
 }
 
-function update(){
+function desenare_sinusoida1(){
+    ctx.clearRect (0,0,canvas.width,canvas.height)
+    desenare();
     ctx.fillStyle = 'green';
-    ctx.clearRect (0,0,canvas.width,canvas.height);
-    desenare_cerc();
-    cerc.raza += 1;
-    if (cerc.raza == 100)
-    {
-        requestAnimationFrame(update2);
+    ctx.fillRect(parametrii.x,parametrii.y,parametrii.frecventa,a);
+    ctx.fillStyle = 'red';
+    ctx.fillRect(parametrii.x,parametrii.y,parametrii.frecventa,b);
+    ctx.fill();
+    parametrii.amplitudine1 += 1;
+    parametrii.amplitudine2 -= 1;
+    if (a == 230 &&b == -230){
+        requestAnimationFrame(desenare_sinusoida2);
     }
-    else{
-    requestAnimationFrame(update);
-    }
-}
-
-function update2(){
-    ctx.clearRect (0,0,canvas.width,canvas.height);
-    desenare_cerc();
-    cerc.raza -= 1;
-    if (cerc.raza == 0)
-    {
-        requestAnimationFrame(update);
-    }
-    else{
-    requestAnimationFrame(update2);
+    else {
+        requestAnimationFrame(desenare_sinusoida1);
     }
 }
 
-update();
+function desenare_sinusoida2(){
+    ctx.clearRect (0,0,canvas.width,canvas.height)
+    desenare();
+    ctx.fillStyle = 'red';
+    ctx.fillRect(parametrii.x,parametrii.y,parametrii.frecventa,a);
+    ctx.fillStyle = 'green';
+    ctx.fillRect(parametrii.x,parametrii.y,parametrii.frecventa,b);
+    ctx.fill();
+    parametrii.amplitudine1 -= 1;
+    parametrii.amplitudine2 += 1;
+    if (a == -230 && b == 230){
+        requestAnimationFrame(desenare_sinusoida1);
+    }
+    else{
+        requestAnimationFrame(desenare_sinusoida2)
+    }
+}
+
+desenare_sinusoida1();
