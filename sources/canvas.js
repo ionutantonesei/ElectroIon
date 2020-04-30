@@ -11,6 +11,7 @@ const parametrii = {
     frecventa_timp: 0,
     faza_timp: 1
 }
+const offset = 60;
 
 function desenare(){
     ctx.lineWidth = 1;
@@ -23,8 +24,22 @@ function desenare_sinusoida1(){
     desenare();
     ctx.fillStyle = 'green';
     ctx.fillRect(parametrii.x,parametrii.y,parametrii.frecventa,a);
+    ctx.fillRect(parametrii.x+offset,parametrii.y,parametrii.frecventa,a-10);
+    ctx.fillRect(parametrii.x+offset+60,parametrii.y,parametrii.frecventa,a-20);
+    ctx.fillRect(parametrii.x+offset+120,parametrii.y,parametrii.frecventa,a-30);
+    ctx.fillRect(parametrii.x+offset+180,parametrii.y,parametrii.frecventa,a-40);
+    ctx.fillRect(parametrii.x+offset+240,parametrii.y,parametrii.frecventa,a-50);
+    ctx.fillRect(parametrii.x+offset+300,parametrii.y,parametrii.frecventa,a-60);
+    ctx.fillRect(parametrii.x+offset+360,parametrii.y,parametrii.frecventa,a-70);
     ctx.fillStyle = 'red';
     ctx.fillRect(parametrii.x,parametrii.y,parametrii.frecventa,b);
+    ctx.fillRect(parametrii.x+offset,parametrii.y,parametrii.frecventa,b+10);
+    ctx.fillRect(parametrii.x+offset+60,parametrii.y,parametrii.frecventa,b+20);
+    ctx.fillRect(parametrii.x+offset+120,parametrii.y,parametrii.frecventa,b+30);
+    ctx.fillRect(parametrii.x+offset+180,parametrii.y,parametrii.frecventa,b+40);
+    ctx.fillRect(parametrii.x+offset+240,parametrii.y,parametrii.frecventa,b+50);
+    ctx.fillRect(parametrii.x+offset+300,parametrii.y,parametrii.frecventa,b+60);
+    ctx.fillRect(parametrii.x+offset+360,parametrii.y,parametrii.frecventa,b+70);
     ctx.fill();
     parametrii.amplitudine1 += 1;
     parametrii.amplitudine2 -= 1;
@@ -41,8 +56,22 @@ function desenare_sinusoida2(){
     desenare();
     ctx.fillStyle = 'red';
     ctx.fillRect(parametrii.x,parametrii.y,parametrii.frecventa,a);
+    ctx.fillRect(parametrii.x+offset,parametrii.y,parametrii.frecventa,a-10);
+    ctx.fillRect(parametrii.x+offset+60,parametrii.y,parametrii.frecventa,a-20);
+    ctx.fillRect(parametrii.x+offset+120,parametrii.y,parametrii.frecventa,a-30);
+    ctx.fillRect(parametrii.x+offset+180,parametrii.y,parametrii.frecventa,a-40);
+    ctx.fillRect(parametrii.x+offset+240,parametrii.y,parametrii.frecventa,a-50);
+    ctx.fillRect(parametrii.x+offset+300,parametrii.y,parametrii.frecventa,a-60);
+    ctx.fillRect(parametrii.x+offset+360,parametrii.y,parametrii.frecventa,a-70);
     ctx.fillStyle = 'green';
     ctx.fillRect(parametrii.x,parametrii.y,parametrii.frecventa,b);
+    ctx.fillRect(parametrii.x+offset,parametrii.y,parametrii.frecventa,b+10);
+    ctx.fillRect(parametrii.x+offset+60,parametrii.y,parametrii.frecventa,b+20);
+    ctx.fillRect(parametrii.x+offset+120,parametrii.y,parametrii.frecventa,b+30);
+    ctx.fillRect(parametrii.x+offset+180,parametrii.y,parametrii.frecventa,b+40);
+    ctx.fillRect(parametrii.x+offset+240,parametrii.y,parametrii.frecventa,b+50);
+    ctx.fillRect(parametrii.x+offset+300,parametrii.y,parametrii.frecventa,b+60);
+    ctx.fillRect(parametrii.x+offset+360,parametrii.y,parametrii.frecventa,b+70);
     ctx.fill();
     parametrii.amplitudine1 -= 1;
     parametrii.amplitudine2 += 1;
