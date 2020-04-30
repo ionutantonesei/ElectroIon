@@ -1,17 +1,45 @@
 const canvas = document.getElementById('interactiv');
 const ctx = interactiv.getContext('2d');
+const cerc = {
+    x : 150,
+    y : 100,
+    raza : 25,
+    dx : 3,
+    dy : 3,
+}
 
+function desenare_cerc(){
 ctx.beginPath();
 ctx.lineWidth = 5;
-const centru_X = 150;
-const centru_Y = 200;
-ctx.arc(centru_X,centru_Y,100,0,Math.PI*2);
-ctx.stroke();
+ctx.arc(cerc.x,cerc.y,cerc.raza,0,Math.PI*2);
+ctx.fill();
+}
 
-ctx.lineWidth = 1;
-ctx.strokeStyle = "hsl(120, 100%, 10%)";
-ctx.strokeRect (10,15,280,380);
+function update(){
+    ctx.fillStyle = 'green';
+    ctx.clearRect (0,0,canvas.width,canvas.height);
+    desenare_cerc();
+    cerc.raza += 1;
+    if (cerc.raza == 100)
+    {
+        requestAnimationFrame(update2);
+    }
+    else{
+    requestAnimationFrame(update);
+    }
+}
 
-ctx.fillStyle = 'black';
-ctx.font = '30px Arial';
-ctx.fillText ('UN OM' , 15 , 170);
+function update2(){
+    ctx.clearRect (0,0,canvas.width,canvas.height);
+    desenare_cerc();
+    cerc.raza -= 1;
+    if (cerc.raza == 0)
+    {
+        requestAnimationFrame(update);
+    }
+    else{
+    requestAnimationFrame(update2);
+    }
+}
+
+update();
