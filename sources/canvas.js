@@ -96,7 +96,7 @@ function desenare_sinusoida2(){
         ctx.fillStyle = 'green';
     }
     else{
-        ctx.fillStyle = intrare_culoare_1;
+        ctx.fillStyle = intrare_culoare_2;
     }
     ctx.fillRect(parametrii.x,parametrii.y,parametrii.frecventa,b);
     ctx.fillRect(parametrii.x+offset,parametrii.y,parametrii.frecventa,b+10);
