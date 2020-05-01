@@ -100,6 +100,44 @@ footer{
 	top: 930px;
 	left: 1680px;
 }
+#container{
+	position: absolute;
+	top : 50vh;
+	left: 50vw;
+	width : 400px;
+	height: 200px;
+	border : 3px solid darkgreen;
+	box-shadow: 4px 4px 5px 2px darkolivegreen;
+}
+#schimbare_culoare_1 {
+	margin: 10px;
+	padding: 10px;
+	border-radius : 5px;
+	font-size: 16px;
+}
+#schimbare_culoare_buton_1{
+	padding: 10px;
+	background-color: darkolivegreen;
+	color : white;
+	font-family: Verdana;
+	text-shadow: 5px 5px 2px 2px gray;
+	border-radius: 5px;
+}
+#schimbare_culoare_2 {
+	margin: 10px;
+	padding: 10px;
+	border-radius : 5px;
+	font-size: 16px;
+}
+#schimbare_culoare_buton_2{
+	padding: 10px;
+	background-color: darkolivegreen;
+	color : white;
+	font-family: Verdana;
+	text-shadow: 5px 5px 2px 2px gray;
+	border-radius: 5px;
+}
+
 @media screen and (min-width: 1px) and (max-width: 600px){
 canvas {
 	position : relative;
@@ -108,13 +146,62 @@ canvas {
 	width : 300px;
 	height : 400px;
 	}
+#container{
+	position: absolute;
+	top : 50vh;
+	left: 68vw;
+	width : 220px;
+	height: 220px;
 }
+#schimbare_culoare_1 {
+	margin: 15px;
+	padding: 10px;
+	font-size: 16px;
+}
+#schimbare_culoare_buton_1{
+	padding: 10px;
+}
+#schimbare_culoare_2 {
+	margin: 15px;
+	padding: 10px;
+	font-size: 16px;
+}
+#schimbare_culoare_buton_2{
+	padding: 10px;
+}
+}
+
 @media screen and (min-width: 600px) and (max-width: 1025px){
-	canvas {
-		position : relative;
-		top : 5vw;
-		left : 2vh;
-		width : 600px;
-		height : 800px;
+canvas {
+	position : relative;
+	top : 5vw;
+	left : 2vh;
+	width : 600px;
+	height : 800px;
+	}
+#container{
+	position: absolute;
+	top : 50vh;
+	left: 68vw;
+	width : 220px;
+	height: 250px;
+	}
+#schimbare_culoare_1 {
+	margin: 15px;
+	padding: 10px;
+	font-size: 16px;
+	}
+#schimbare_culoare_buton_1{
+	margin-left: 10px;
+	padding: 10px;
+	}
+#schimbare_culoare_2 {
+	margin: 15px;
+	padding: 10px;
+	font-size: 16px;
+	}
+#schimbare_culoare_buton_2{
+	margin-left: 10px;
+	padding: 10px;
 	}
 }
