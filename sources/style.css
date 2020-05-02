@@ -137,45 +137,101 @@ footer{
 	text-shadow: 5px 5px 2px 2px gray;
 	border-radius: 5px;
 }
+#formular{
+	position: relative;
+	top: 20vh;
+	left: 15vw;
+	width: 60vw;
+	height: 50vh;
+	border: none;
+}
+#intrebare_1{
+	text-align: center;
+	font-size: 30px;
+	font-family: Verdana;
+}
+input[type='checkbox']{
+}
+label[for = 'raspuns_1']{
+	font-size: 24px;
+	font-family: Verdana;
+}
+label:hover[for = 'raspuns_1']{
+	transition: 0.5s;
+	background-color: rgb(146, 165, 165);
+}
+label[for = 'raspuns_2']{
+	font-size: 24px;
+	font-family: Verdana;
+}
+label:hover[for = 'raspuns_2']{
+	transition: 0.5s;
+	background-color: rgb(146, 165, 165)
+}
+label[for = 'raspuns_3']{
+	font-size: 24px;
+	font-family: Verdana;
+}
+label:hover[for = 'raspuns_3']{
+	transition: 0.5s;
+	background-color: rgb(146, 165, 165);
+}
+li.raspuns{
+	position: relative;
+	display: block;
+	float: top;
+	padding-top: 10px;
+}
+#buton_intrebare_1{
+	position: relative;
+	left: 20vw;
+	top: 5vh;
+	height: 100px;
+	background-color: salmon;
+}
 
 @media screen and (min-width: 1px) and (max-width: 600px){
 canvas {
 	position : relative;
-	top : 15vw;
-	left : 2vh;
-	width : 300px;
-	height : 400px;
+	top : 20vh;
+	left : 1vw;
+	width : 200px;
+	height : 300px;
 	}
 #container{
 	position: absolute;
 	top : 50vh;
-	left: 68vw;
-	width : 220px;
-	height: 220px;
-}
+	left: 50vw;
+	width : 120px;
+	height: 250px;
+	}
 #schimbare_culoare_1 {
 	margin: 15px;
-	padding: 10px;
+	padding: 1px;
+	width: 80px;
 	font-size: 16px;
-}
+	}
 #schimbare_culoare_buton_1{
+	margin-left: 10px;
 	padding: 10px;
-}
+	}
 #schimbare_culoare_2 {
 	margin: 15px;
-	padding: 10px;
+	padding: 1px;
+	width: 80px;
 	font-size: 16px;
-}
+	}
 #schimbare_culoare_buton_2{
+	margin-left: 10px;
 	padding: 10px;
-}
+	}
 }
 
 @media screen and (min-width: 600px) and (max-width: 1025px){
 canvas {
 	position : relative;
-	top : 5vw;
-	left : 2vh;
+	top : 5vh;
+	left : 2vw;
 	width : 600px;
 	height : 800px;
 	}
@@ -204,4 +260,11 @@ canvas {
 	margin-left: 10px;
 	padding: 10px;
 	}
+}
+@media screen and (min-width: 3839px) and (max-width: 3841px){
+	footer{
+		position: fixed;
+		top: 2100px;
+		left: 3600px;
+	}	
 }
