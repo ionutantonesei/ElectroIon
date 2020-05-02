@@ -81,15 +81,15 @@ hr{
 }
 #buton_urmator{
 	position: fixed;
-	left: 50vw;
-	top: 85vh;
+	left: 70%;
+	top: 50%;
 	height: 5vh;
 	width: 5vh;
 }
 #buton_anterior{
 	position: fixed;
-	left: 20vw;
-	top: 85vh;
+	left: 7%;
+	top: 50%;
 	height: 5vh;
 	width: 5vh;
 }
@@ -207,9 +207,10 @@ li.raspuns{
 }
 #buton_intrebare_1{
 	position: relative;
-	left: 20vw;
+	left: 50%;
 	top: 5vh;
-	height: 100px;
+	height: 10vh;
+	width: 10vw;
 	background-color: salmon;
 }
 
