@@ -177,15 +177,15 @@ footer{
 	background: rgba(0,0,0,0.5);
 	border-radius: 25px;
 	box-shadow: 10px 10px 15px 5px black;
-	top: 30%;
+	top: 20%;
 	left: 15%;
-	height: 50%;
+	height: 70%;
 	width: 60%;
 }
 .campuri_intrari{
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 70%;
 	padding-left: 1%;
 }
 .intrare_text{
@@ -277,6 +277,43 @@ li.raspuns{
 		height: 5vh;
 		width: 5vh;
 	}
+	.formular{
+		display:flex;
+		display: column;
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		border-radius: 25px;
+		box-shadow: 10px 10px 15px 5px black;
+		top: 30%;
+		left: 15%;
+		height: 60%;
+		width: 60%;
+	}
+	.campuri_intrari{
+		position: absolute;
+		top: 30%;
+		left :10%;
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		height: 100%;
+	}
+	.intrare_text{
+		height: 25%;
+		resize: horizontal;
+	}
+	.intrare, .intrare_text{
+		background: transparent;
+		border: none;
+		margin-top: 8%;
+		margin-left: 5%;
+		color: white;
+	}
+	#buton_submit{
+		margin-top: 5%;
+		margin-left: 10%;
+		height: 10%;
+	}
 }
 
 @media screen and (min-width: 600px) and (max-width: 1025px){
@@ -295,11 +332,50 @@ li.raspuns{
 		height:100%;
 		width: 90%;
 	}
+	.formular{
+		display:flex;
+		display: row;
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		border-radius: 25px;
+		box-shadow: 10px 10px 15px 5px black;
+		top: 50%;
+		left: 15%;
+		height: 45%;
+		width: 60%;
+	}
+	.campuri_intrari{
+		position: absolute;
+		top: 1%;
+		left :5%;
+		display: flex;
+		flex-direction: column;
+		width: 60%;
+		height: 80%;
+	}
+	.intrare_text{
+		height: 10%;
+		resize: none;
+	}
+	.intrare, .intrare_text{
+		background: transparent;
+		border: none;
+		color: white;
+	}
+	#buton_submit{
+		position: absolute;
+		top: 40%;
+		left: 100%;
+		margin-top: 5%;
+		margin-left: 10%;
+		height: 25%;
+		width: 25%;
+	}
 }
 @media screen and (min-width: 3839px) and (max-width: 3841px){
 	footer{
 		position: fixed;
 		top: 2100px;
 		left: 3600px;
-	}	
+	}
 }
