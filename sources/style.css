@@ -164,7 +164,7 @@ footer{
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: 30%;
+	top: 20%;
 	left: 10%;
 	width: 80%;
 	height: 60%;
@@ -194,7 +194,9 @@ footer{
 }
 .intrare, .intrare_text{
 	background: transparent;
-	border: none;
+	border: groove whitesmoke;
+	border-top: 10px;
+	border-right: 0px;
 	margin-top: 8%;
 	margin-left: 5%;
 	color: white;
@@ -208,9 +210,20 @@ footer{
 	text-align: center;
 	font-size: 24px;
 	font-family: Verdana;
+	font-weight: bold;
+}
+.raspuns{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	height: 40%;
+	padding-top: 10%;
+	width: 80%;
+	top: 0%;
+	left: 10%;
 }
 label[for = 'raspuns_1']{
-	font-size: 16px;
+	font-size: 24px;
 	font-family: Verdana;
 }
 label:hover[for = 'raspuns_1']{
@@ -218,7 +231,7 @@ label:hover[for = 'raspuns_1']{
 	background-color: rgb(146, 165, 165);
 }
 label[for = 'raspuns_2']{
-	font-size: 16px;
+	font-size: 24px;
 	font-family: Verdana;
 }
 label:hover[for = 'raspuns_2']{
@@ -226,7 +239,7 @@ label:hover[for = 'raspuns_2']{
 	background-color: rgb(146, 165, 165)
 }
 label[for = 'raspuns_3']{
-	font-size: 16px;
+	font-size: 24px;
 	font-family: Verdana;
 }
 label:hover[for = 'raspuns_3']{
@@ -242,8 +255,8 @@ li.raspuns{
 #buton_intrebare_1{
 	position: absolute;
 	left: 30%;
-	top: 60%;
-	height: 20%;
+	top: 85%;
+	height: 10%;
 	width: 40%;
 	background-color: salmon;
 }
@@ -279,7 +292,7 @@ li.raspuns{
 	}
 	.formular{
 		display:flex;
-		display: column;
+		flex-direction: column;
 		position: absolute;
 		background: rgba(0,0,0,0.5);
 		border-radius: 25px;
@@ -291,12 +304,12 @@ li.raspuns{
 	}
 	.campuri_intrari{
 		position: absolute;
-		top: 30%;
+		top: 10%;
 		left :10%;
 		display: flex;
 		flex-direction: column;
-		width: 70%;
-		height: 100%;
+		width: 60%;
+		height: 70%;
 	}
 	.intrare_text{
 		height: 25%;
@@ -313,6 +326,46 @@ li.raspuns{
 		margin-top: 5%;
 		margin-left: 10%;
 		height: 10%;
+	}
+	#intrebari{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 40%;
+		left: 10%;
+		width: 80%;
+		height: 60%;
+		border: 1px solid red;
+	}
+	#intrebare_1{
+		text-align: center;
+		font-size: 16px;
+		font-family: Verdana;
+		font-weight: bold;
+	}
+	label[for = 'raspuns_1']{
+		font-size: 16px;
+		font-family: Verdana;
+	}
+	label:hover[for = 'raspuns_1']{
+		transition: 0.5s;
+		background-color: rgb(146, 165, 165);
+	}
+	label[for = 'raspuns_2']{
+		font-size: 16px;
+		font-family: Verdana;
+	}
+	label:hover[for = 'raspuns_2']{
+		transition: 0.5s;
+		background-color: rgb(146, 165, 165)
+	}
+	label[for = 'raspuns_3']{
+		font-size: 16px;
+		font-family: Verdana;
+	}
+	label:hover[for = 'raspuns_3']{
+		transition: 0.5s;
+		background-color: rgb(146, 165, 165);
 	}
 }
 
@@ -370,6 +423,46 @@ li.raspuns{
 		margin-left: 10%;
 		height: 25%;
 		width: 25%;
+	}
+	#intrebari{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 40%;
+		left: 10%;
+		width: 80%;
+		height: 60%;
+		border: 1px solid red;
+	}
+	#intrebare_1{
+		text-align: center;
+		font-size: 16px;
+		font-family: Verdana;
+		font-weight: bold;
+	}
+	label[for = 'raspuns_1']{
+		font-size: 16px;
+		font-family: Verdana;
+	}
+	label:hover[for = 'raspuns_1']{
+		transition: 0.5s;
+		background-color: rgb(146, 165, 165);
+	}
+	label[for = 'raspuns_2']{
+		font-size: 16px;
+		font-family: Verdana;
+	}
+	label:hover[for = 'raspuns_2']{
+		transition: 0.5s;
+		background-color: rgb(146, 165, 165)
+	}
+	label[for = 'raspuns_3']{
+		font-size: 16px;
+		font-family: Verdana;
+	}
+	label:hover[for = 'raspuns_3']{
+		transition: 0.5s;
+		background-color: rgb(146, 165, 165);
 	}
 }
 @media screen and (min-width: 3839px) and (max-width: 3841px){
