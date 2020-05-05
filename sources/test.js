@@ -1,6 +1,6 @@
-let buton_intrebare_1 = document.getElementById('buton_intrebare_1');
-const intrebare = document.getElementById('intrebare_1');
-const variante = document.getElementById('variante_1');
+let buton_intrebare_1 = document.getElementById('buton_intrebare');
+const intrebare = document.getElementById('intrebare');
+const variante = document.getElementById('variante');
 
 buton_intrebare_1.addEventListener('click',function(){
     let intrare_raspuns_1 = document.getElementById('raspuns_1').checked;
@@ -13,6 +13,6 @@ buton_intrebare_1.addEventListener('click',function(){
     else{
         alert('GRESIT');
     }
-    intrebare_1.remove();
-    variante_1.remove();
+    intrebare.remove();
+    variante.remove();
 })
