@@ -13,6 +13,6 @@ buton_intrebare_1.addEventListener('click',function(){
     else{
         alert('GRESIT');
     }
-    intrebare.remove();
-    variante.remove();
+    intrebare_1.remove();
+    variante_1.remove();
 })

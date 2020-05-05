@@ -58,10 +58,10 @@ a {
     height: 100%;
     text-decoration: none;
     color:black;
+    font-family: Aldrich;
 }
 a:hover {
     transition: 0.5s;
-    font-family: Aldrich;
     background-color: greenyellow;
     box-shadow: 6px 6px 15px 5px green;
 }
@@ -91,7 +91,7 @@ h3{
 .frame{
 position: absolute;
 top:30vh;
-left:20vw;
+left:19vw;
 height: 60vh;
 width: 60vw;
 }
@@ -106,23 +106,66 @@ width: 60vw;
 #buton_urmator{
     position: fixed;
     top:60vh;
-    left:90vw;
+    left:80vw;
     height:5vh;
     width:3vw;
+}
+#buton_urmator:hover{
+    transition: 0.3s ease;
+    filter: blur(2px);
 }
 #buton_anterior{
     position: fixed;
     top: 60vh;
-    left: 10vw;
+    left: 15vw;
     height:5vh;
     width:3vw;
 }
-
+#buton_anterior:hover{
+    transition: 0.3s ease;
+    filter: blur(2px);
+}
 footer{
     position: fixed;
     top:90%;
     left:90%;
     font-size: 10px;
+}
+
+/*Pagina test.html*/
+
+#intrebari{
+    position: absolute;
+    top:30vh;
+    left:10vw;
+    height: 60vh;
+    width: 80vw;
+}
+#intrebare{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 28px;
+
+}
+#variante{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    width: 80vw;
+    height: 60vh;
+    list-style-type: none;
+    border: 1px solid red;
+    font-size: 24px;
+}
+.buton_intrebare{
+    position: absolute;
+    top: 55vh;
+    left: 25vw;
+    width: 30vw;
+    height: 5vh;
 }
 @media only screen and (max-width: 1000px){
 /* Pagina teorie.html*/
@@ -184,10 +227,10 @@ a {
     height: 100%;
     text-decoration: none;
     color:black;
+    font-family: Aldrich;
 }
 a:hover {
     transition: 0.5s;
-    font-family: Aldrich;
     background-color: greenyellow;
 }
 
@@ -197,4 +240,158 @@ a:hover {
     margin:10%;
     font-size: 16px;
 }
+/* Pagina Poze.html*/
+.frame{
+    position: absolute;
+    top:20vh;
+    left:19vw;
+    height: 60vh;
+    width: 60vw;
+    }
+#buton_urmator{
+    position: fixed;
+    top:50vh;
+    left:80vw;
+    height:8vh;
+    width:10vw;
 }
+#buton_anterior{
+    position: fixed;
+    top: 50vh;
+    left: 10vw;
+    height:8vh;
+    width:10vw;
+}
+}
+@media only screen and (max-height: 450px){
+    /* Pagina teorie.html*/
+    
+    .banner {
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        top: 0vh;
+        left: 0vw;
+        height: 10vh;
+        width: 99vw;
+    }
+    .titlu{
+        position: absolute;
+        top: 1vw;
+        left: 1vh;
+        height: 3vh;
+        width: 100vw;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    #navigator{
+        justify-content: space-between;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 10vh;
+        left: 10vw;
+        height: 5vh;
+        width: 80vw;
+        list-style-type: none;
+        background-color: yellowgreen;
+    }
+    .meniu{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        position: relative;
+        float: left;
+        margin-left: 0vw;
+        padding-left: 15vw;
+        list-style-type: none;
+        font-size: 10px;
+        text-align: center;
+    }
+    a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0vh;
+        left: 0vh;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color:black;
+        font-family: Aldrich;
+    }
+    a:hover {
+        transition: 0.5s;
+        background-color: greenyellow;
+    }
+    
+    #zona_text{
+        position: absolute;
+        top:15%;
+        margin:10%;
+        font-size: 16px;
+    }
+    /* Pagina Poze.html*/
+    .frame{
+        position: absolute;
+        top:20vh;
+        left:19vw;
+        height: 60vh;
+        width: 60vw;
+        }
+    #buton_urmator{
+        position: fixed;
+        top:50vh;
+        left:80vw;
+        height:8vh;
+        width:7vw;
+    }
+    #buton_anterior{
+        position: fixed;
+        top: 50vh;
+        left: 10vw;
+        height:8vh;
+        width:7vw;
+    }
+/*Pagina test.html*/
+
+#intrebari{
+    position: absolute;
+    top:30vh;
+    left:10vw;
+    height: 60vh;
+    width: 80vw;
+}
+#intrebare{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 24px;
+
+}
+#variante{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    width: 80vw;
+    height: 60vh;
+    list-style-type: none;
+    border: 1px solid red;
+    font-size: 16px;
+}
+.buton_intrebare{
+    position: absolute;
+    top: 25vh;
+    left: 70vw;
+    width: 10vw;
+    height: 20vh;
+}
+    }
