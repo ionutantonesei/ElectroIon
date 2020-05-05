@@ -166,8 +166,11 @@ footer{
     left: 0vw;
     width: 50vw;
     height: 10vh;
-    border: 3px solid red;
     text-align: center;
+}
+.raspuns:hover{
+    transition: 0.4s ease;
+    background-color: lightblue;
 }
 #buton_intrebare{
     position: absolute;
@@ -309,7 +312,6 @@ a:hover {
     left: 0vw;
     width: 70vw;
     height: 10vh;
-    border: 3px solid red;
     text-align: center;
 }
 #buton_intrebare{
@@ -318,6 +320,10 @@ a:hover {
     left: 25vw;
     width: 30vw;
     height: 10vh;
+}
+.raspuns:hover{
+    transition: 0.4s ease;
+    background-color: lightblue;
 }
 .raspuns[type='checkbox']{
     display: none;
@@ -454,7 +460,6 @@ a:hover {
     left: 0vw;
     width: 50vw;
     height: 10vh;
-    border: 3px solid red;
     text-align: center;
 }
 #buton_intrebare{
@@ -463,6 +468,10 @@ a:hover {
     left: 70vw;
     width: 10vw;
     height: 30vh;
+}
+.raspuns:hover{
+    transition: 0.4s ease;
+    background-color: lightblue;
 }
 .raspuns[type='checkbox']{
     display: none;
