@@ -179,9 +179,9 @@ footer{
     width: 30vw;
     height: 5vh;
 }
-.raspuns[type='checkbox']{
-    display: none;
-}
+
+/*pagina interactiv.html*/
+
 @media only screen and (max-width: 1000px){
 /* Pagina teorie.html*/
 
@@ -325,11 +325,7 @@ a:hover {
     transition: 0.4s ease;
     background-color: lightblue;
 }
-.raspuns[type='checkbox']{
-    display: none;
-}
 
-}
 @media only screen and (max-height: 450px){
     /* Pagina teorie.html*/
     
