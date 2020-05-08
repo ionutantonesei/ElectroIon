@@ -179,8 +179,32 @@ footer{
     width: 30vw;
     height: 5vh;
 }
-
 /*pagina interactiv.html*/
+#interactiv{
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    height: 400px;
+    width: 800px;
+}
+
+/*pagina contact.html*/
+.formular{
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    height: 60wh;
+    width: 80vw;
+}
+.campuri_intrari{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 0vh;
+    left: 0vw;
+    height: 70vh;
+    width: 70vw;
+}
 
 @media only screen and (max-width: 1000px){
 /* Pagina teorie.html*/
