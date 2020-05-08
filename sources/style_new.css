@@ -189,11 +189,19 @@ footer{
 }
 
 /*pagina contact.html*/
+input{
+    border: none;
+    box-shadow: 1px 1px 10px 5px lightgreen;
+}
+input:hover{
+    box-shadow: 1px 1px 10px 5px green;
+}
+
 .formular{
     position: absolute;
-    top: 30vh;
-    left: 10vw;
-    height: 60wh;
+    top: 25vh;
+    left: 15vw;
+    height: 70wh;
     width: 80vw;
 }
 .campuri_intrari{
@@ -202,10 +210,27 @@ footer{
     justify-content: space-evenly;
     top: 0vh;
     left: 0vw;
-    height: 70vh;
+    height: 60vh;
     width: 70vw;
 }
-
+.intrare_formular{
+    margin-top: 2%;
+    height: 20%;
+}
+.intrare_text{
+    margin-top: 2%;
+    height: 40%;
+}
+#buton_submit{
+    margin-top: 2%;
+    height:20%;
+    background-color: darkgreen;
+    color: whitesmoke;
+}
+#buton_submit:hover{
+    background-color: greenyellow;
+    color: black;
+}
 @media only screen and (max-width: 1000px){
 /* Pagina teorie.html*/
 
@@ -237,7 +262,7 @@ footer{
     flex-direction: row;
     top: 10vh;
     left: 10vw;
-    height: 5vh;
+    height: 10vh;
     width: 80vw;
     list-style-type: none;
     background-color: yellowgreen;
@@ -349,6 +374,9 @@ a:hover {
     transition: 0.4s ease;
     background-color: lightblue;
 }
+.raspuns[type='checkbox']{
+    display: none;
+}
 
 @media only screen and (max-height: 450px){
     /* Pagina teorie.html*/
@@ -382,7 +410,7 @@ a:hover {
         flex-direction: row;
         top: 10vh;
         left: 10vw;
-        height: 5vh;
+        height: 10vh;
         width: 80vw;
         list-style-type: none;
         background-color: yellowgreen;
