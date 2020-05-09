@@ -22,58 +22,23 @@
 </ul>
 </nav>
 <footer>&copy; 2020 Ionut Antonesei</footer>
-<tm1-ui-dbr
-   tm1-instance="Instance Name"
-   tm1-cube="Cube Name"
-   tm1-elements='Comma separated element list'
-   tm1-comment-cube="Cube Name"
-   tm1-comment-elements='Comma separated element list'
-   tm1-comment-format-html-buttons="[["h1","h2","h3"],["bold","italics","underline","justifyLeft","justifyCenter","justifyRight","justifyFull"],["indent","outdent","ul","ol"]]"
-   tm1-picklist-radio="none"
-   tm1-multi-line="1"
-   tm1-read-only="false"
-   tm1-comment-read-only="false"
-   tm1-data-decimal="0"
-   tm1-default-empty="string"
-   tm1-placeholder="string"
-   tm1-date-option="{format:"yyyy-mm-dd"}"
-   tm1-format-percentage="false"
-   tm1-format-parenthesis="false"
-   tm1-format-html="false"
-   tm1-format-html-popup="false"
-   tm1-hide-reference="false"
-   tm1-hide-comment="false"
-   tm1-hide-spread="false"
-   tm1-hide-drill="false"
-   tm1-hide-context-menu="false"
-   tm1-add-context-menu="Array"
-   tm1-format-html-buttons="[["h1","h2","h3"],["bold","italics","underline","justifyLeft","justifyCenter","justifyRight","justifyFull"],["indent","outdent","ul","ol"]]"
-   tm1-validate="string"
-   tm1-validate-message="string"
-   tm1-ui-class="string"
-   tm1-consol-input="false"
-   tm1-consol-input-spread-method="p"
-   tm1-before-update="beforeUpdateEvent(event)"
-   tm1-drill-model="string"
-   tm1-api="string"
-   tm1-change="false"
-   tm1-accounting-settings-override="object"
-   tm1-rpt-view-model="object"
-   tm1-rpt-row-cell="object"
-   ng-model="model"
-   >
-</tm1-ui-dbr>
-<canvas id = "interactiv" ></canvas>
 <div id = "container">
-   <div id = "intrare_culoare_canvas">
-      <label for = "schimbare_culoare">
-         <input id = "schimbare_culoare_1" type = "text" name = "schimbare_culoare_1" placeholder="culoarea 1" />
-         <input id = "schimbare_culoare_buton_1" type = "submit" name = "schimbare_culoare_buton" value = "APLICA" onclick="culoare_1()" />
-         <input id = "schimbare_culoare_2" type = "text" name = "schimbare_culoare_2" placeholder="culoarea 2" />
-         <input id = "schimbare_culoare_buton_2" type = "submit" name = "schimbare_culoare_buton" value = "APLICA" onclick="culoare_2()" />
-      </label>
+   <div id = "desen_rezistenta"></div>
+   <div id ='culori_rezistenta1'></div>
+   <div id ='culori_rezistenta2'></div>
+   <div id ='culori_rezistenta3'></div>
+   <div id ='culori_rezistenta4'></div>
+      <div id = "controale">
+         <input class = 'control' id = "schimbare_culoare_1" type = "text" name = "schimbare_culoare_1" placeholder="culoarea 1" />
+         <input class = 'control_buton' id = "schimbare_culoare_buton_1" type = "submit" name = "schimbare_culoare_buton" value = "APLICA"/>
+         <input class = 'control' id = "schimbare_culoare_2" type = "text" name = "schimbare_culoare_2" placeholder="culoarea 2" />
+         <input class = 'control_buton' id = "schimbare_culoare_buton_2" type = "submit" name = "schimbare_culoare_buton" value = "APLICA"/>
+         <input class = 'control' id = "schimbare_culoare_3" type = "text" name = "schimbare_culoare_3" placeholder="culoarea 3" />
+         <input class = 'control_buton' id = "schimbare_culoare_buton_3" type = "submit" name = "schimbare_culoare_buton" value = "APLICA"/>
+         <input class = 'control' id = "schimbare_culoare_4" type = "text" name = "schimbare_culoare_4" placeholder="culoarea 4" />
+         <input class = 'control_buton' id = "schimbare_culoare_buton_4" type = "submit" name = "schimbare_culoare_buton" value = "APLICA"/>
+      </div>
    </div>
-</div>
-<script src = "sources/canvas.js"></script>
+<script src = "sources/desen.js"></script>
 </body>
 </html>

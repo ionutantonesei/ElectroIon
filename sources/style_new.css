@@ -180,12 +180,75 @@ footer{
     height: 5vh;
 }
 /*pagina interactiv.html*/
-#interactiv{
+*{
+    --culoare_1: black;
+    --culoare_2: brown;
+    --culoare_3: red;
+    --culoare_4: orange;
+    --culoare_5: yellow;
+    --culoare_6: green;
+    --culoare_7: blue;
+}
+#container{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 500px;
-    left: 100px;
-    height: 400px;
-    width: 800px;
+    height: 60vh;
+    width: 80vw;
+    top:30vh;
+    left:10vw;
+    border: 1px solid red;
+}
+#desen_rezistenta{
+    position: absolute;
+    top:5vh;
+    left:5vw;
+    height: 10vh;
+    width: 30vh;
+    border-radius: 30%;
+    background: palegoldenrod;
+}
+#culori_rezistenta1{
+    position: absolute;
+    top:5vh;
+    left:8vw;
+    height: 10vh;
+    width: 1vw;
+    background: black;
+}
+#culori_rezistenta2{
+    position: absolute;
+    top:5vh;
+    left:10vw;
+    height: 10vh;
+    width: 1vw;
+    background: var(--culoare_1);
+}
+#culori_rezistenta3{
+    position: absolute;
+    top:5vh;
+    left:14vw;
+    height: 10vh;
+    width: 1vw;
+    background: var(--culoare_1);
+}
+#culori_rezistenta4{
+    position: absolute;
+    top:5vh;
+    left:16vw;
+    height: 10vh;
+    width: 1vw;
+    background-color: var(--culoare_1);
+}
+#controale{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top:10vh;
+    left:60vw;
+    height: 40vh;
+    width: 20vh;
 }
 
 /*pagina contact.html*/
@@ -376,7 +439,7 @@ a:hover {
 }
 .raspuns[type='checkbox']{
     display: none;
-}
+}}
 
 @media only screen and (max-height: 450px){
     /* Pagina teorie.html*/
@@ -523,5 +586,4 @@ a:hover {
 }
 .raspuns[type='checkbox']{
     display: none;
-}
-}
+}}
