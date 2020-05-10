@@ -24,10 +24,11 @@
 <footer>&copy; 2020 Ionut Antonesei</footer>
 <div id = "container">
    <div id = "desen_rezistenta"></div>
-   <div id ='culori_rezistenta1'></div>
-   <div id ='culori_rezistenta2'></div>
-   <div id ='culori_rezistenta3'></div>
-   <div id ='culori_rezistenta4'></div>
+   <div class='culori_rezistenta' id ='culori_rezistenta1'></div>
+   <div class='culori_rezistenta' id ='culori_rezistenta2'></div>
+   <div class='culori_rezistenta' id ='culori_rezistenta3'></div>
+   <div class='culori_rezistenta' id ='culori_rezistenta4'></div>
+   <p class = 'afisare_valoare_rezistenta'></p>
       <div id = "controale">
          <input class = 'control' id = "schimbare_culoare_1" type = "text" name = "schimbare_culoare_1" placeholder="culoarea 1" />
          <input class = 'control_buton' id = "schimbare_culoare_buton_1" type = "submit" name = "schimbare_culoare_buton" value = "APLICA"/>
@@ -37,6 +38,7 @@
          <input class = 'control_buton' id = "schimbare_culoare_buton_3" type = "submit" name = "schimbare_culoare_buton" value = "APLICA"/>
          <input class = 'control' id = "schimbare_culoare_4" type = "text" name = "schimbare_culoare_4" placeholder="culoarea 4" />
          <input class = 'control_buton' id = "schimbare_culoare_buton_4" type = "submit" name = "schimbare_culoare_buton" value = "APLICA"/>
+         <button class = 'rezultat' onclick="rezultat()">REZULTAT</button>
       </div>
    </div>
 <script src = "sources/desen.js"></script>

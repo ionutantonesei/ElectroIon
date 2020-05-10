@@ -181,17 +181,18 @@ footer{
 }
 /*pagina interactiv.html*/
 *{
-    --culoare_1: black;
-    --culoare_2: brown;
-    --culoare_3: red;
-    --culoare_4: orange;
-    --culoare_5: yellow;
-    --culoare_6: green;
-    --culoare_7: blue;
+    --culoare_0: black;
+    --culoare_1: brown;
+    --culoare_2: red;
+    --culoare_3: orange;
+    --culoare_4: yellow;
+    --culoare_5: green;
+    --culoare_6: blue;
+    --culoare_7: purple;
+    --culoare_8: gray;
+    --culoare_9: white;
 }
 #container{
-    display: flex;
-    flex-direction: column;
     position: absolute;
     height: 60vh;
     width: 80vw;
@@ -200,12 +201,13 @@ footer{
     border: 1px solid red;
 }
 #desen_rezistenta{
+    display: flex;
+    align-items: center;
     position: absolute;
     top:5vh;
     left:5vw;
     height: 10vh;
     width: 30vh;
-    border-radius: 30%;
     background: palegoldenrod;
 }
 #culori_rezistenta1{
@@ -222,7 +224,7 @@ footer{
     left:10vw;
     height: 10vh;
     width: 1vw;
-    background: var(--culoare_1);
+    background: var(--culoare_0);
 }
 #culori_rezistenta3{
     position: absolute;
@@ -230,7 +232,7 @@ footer{
     left:14vw;
     height: 10vh;
     width: 1vw;
-    background: var(--culoare_1);
+    background: var(--culoare_0);
 }
 #culori_rezistenta4{
     position: absolute;
@@ -238,17 +240,45 @@ footer{
     left:16vw;
     height: 10vh;
     width: 1vw;
-    background-color: var(--culoare_1);
+    background: var(--culoare_0);
 }
 #controale{
+    position: absolute;
+    top:5vh;
+    left:30vw;
+    height: 50vh;
+    width: 70vh;
+}
+.control{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    top: 0vh;
+    left: 0vw;
+    margin-top:1%;
+    height: 5vh;
+    width: 30vw;
+}
+.control_buton{
+    box-shadow: 1px 1px 3px 3px greenyellow;
+    margin-left:40%;
+    margin-top:3%;
+    padding:2%;
+}
+.rezultat{
     position: absolute;
-    top:10vh;
-    left:60vw;
-    height: 40vh;
-    width: 20vh;
+    align-content: center;
+    top: 45vh;
+    left: 20vw;
+    height: 10vh;
+    width: 10vw;
+}
+p .afisare_valoare_rezistenta{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    height: 5%;
+    width: 20%;
 }
 
 /*pagina contact.html*/
