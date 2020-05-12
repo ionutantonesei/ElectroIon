@@ -193,7 +193,7 @@ footer{
     --culoare_9: white;
 }
 #container{
-    position: absolute;
+    position: fixed;
     height: 60vh;
     width: 80vw;
     top:30vh;
@@ -201,45 +201,44 @@ footer{
     border: 1px solid red;
 }
 #desen_rezistenta{
-    display: flex;
-    align-items: center;
     position: absolute;
-    top:5vh;
-    left:5vw;
-    height: 10vh;
-    width: 30vh;
+    top:7.5%;
+    left:5%;
+    height: 10%;
+    width: 20%;
+    border-radius: 25% 25%;
     background: palegoldenrod;
 }
 #culori_rezistenta1{
     position: absolute;
     top:5vh;
-    left:8vw;
-    height: 10vh;
-    width: 1vw;
+    left:5vw;
+    height: 5vh;
+    width: 0.7vw;
     background: black;
 }
 #culori_rezistenta2{
     position: absolute;
     top:5vh;
     left:10vw;
-    height: 10vh;
-    width: 1vw;
+    height: 5vh;
+    width: 0.7vw;
     background: var(--culoare_0);
 }
 #culori_rezistenta3{
     position: absolute;
     top:5vh;
     left:14vw;
-    height: 10vh;
-    width: 1vw;
+    height: 5vh;
+    width: 0.7vw;
     background: var(--culoare_0);
 }
 #culori_rezistenta4{
     position: absolute;
     top:5vh;
-    left:16vw;
-    height: 10vh;
-    width: 1vw;
+    left:18vw;
+    height: 5vh;
+    width: 0.7vw;
     background: var(--culoare_0);
 }
 #controale{
@@ -253,25 +252,27 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    top: 0vh;
-    left: 0vw;
-    margin-top:1%;
-    height: 5vh;
-    width: 30vw;
+    top: 0%;
+    left: 0%;
+    margin-top:3%;
+    height: 5%;
+    width: 30%;
 }
 .control_buton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10%;
+    margin-left: 10%;
+    margin-top: 3%;
     box-shadow: 1px 1px 3px 3px greenyellow;
-    margin-left:40%;
-    margin-top:3%;
-    padding:2%;
 }
 .rezultat{
     position: absolute;
-    align-content: center;
-    top: 45vh;
-    left: 20vw;
-    height: 10vh;
-    width: 10vw;
+    top: 50vh;
+    left: 10vw;
+    height: 5vh;
+    width: 15vw;
 }
 p .afisare_valoare_rezistenta{
     position: absolute;
