@@ -139,14 +139,22 @@ div:hover.element{
 }
 h2{
     text-align: center;
-    margin-top:5%;
-    margin-bottom: 5%;
+    margin-top:0%;
+    margin-bottom: 2%;
 }
 h3{
     margin-top:2%;
     margin-bottom: 2%;
 }
-
+#poza-electricitate{
+    position: absolute;
+    top:100%;
+    margin-top:1%;
+    left: 0%;
+    height: 30vh;
+    width: 30vw;
+    z-index: -1;
+}
 /* Pagina poze.html*/
 
 .frame{
@@ -532,6 +540,14 @@ a:hover.meniu_sus {
 .raspuns[type='checkbox']{
     display: none;
 }}
+
+/* Pagina teorie_electricitate.html */
+#container-electricitate{
+    position: absolute;
+    top:30%;
+    left:10%;
+    margin-right:10%;
+}
 
 @media only screen and (max-height: 450px){
     /* Pagina teorie.html*/
