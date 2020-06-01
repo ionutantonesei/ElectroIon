@@ -472,6 +472,20 @@ a:hover.meniu_sus {
     margin:10%;
     font-size: 16px;
 }
+#meniu_container{
+    display: grid;
+    position: absolute;
+    top:35%;
+    left:10%;
+    height: 60%;
+    width:80%;
+    grid-gap: 15vh 5vw;
+    grid-template-columns: repeat(auto-fill,25%);
+    grid-template-rows: 15% 15%;
+}
+.element{
+    font: 0.5em Aldrich;
+}
 /* Pagina Poze.html*/
 .frame{
     position: absolute;
