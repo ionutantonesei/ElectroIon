@@ -445,7 +445,7 @@ input:hover{
     margin-left: 0vw;
     padding-left: 15vw;
     list-style-type: none;
-    font-size: 24px;
+    font-size: 12px;
     text-align: center;
 }
 a.meniu_sus {
@@ -471,7 +471,7 @@ a:hover.meniu_sus {
     position: absolute;
     top:15%;
     margin:10%;
-    font-size: 16px;
+    font-size: 12px;
 }
 #meniu_container{
     display: grid;
@@ -485,7 +485,7 @@ a:hover.meniu_sus {
     grid-template-rows: 15% 15%;
 }
 .element{
-    font: 1em Aldrich;
+    font: 0.5em Aldrich;
 }
 /* Pagina Poze.html*/
 .frame{
