@@ -22,14 +22,15 @@
 </ul>
 </nav>
 <div class ='formular'>
-    <div class ='campuri_intrari'>
-        <input class = 'intrare_formular' placeholder="nume" />
-        <input class = 'intrare_formular' placeholder="e-mail" />
-        <input class = 'intrare_formular' placeholder="telefon" />
-        <textarea class = 'intrare_text' placeholder="Introdu mesajul"></textarea>
+    <form id ='campuri_intrari' method ='POST' action = '/contact'>
+        <input id = 'intrare_nume' class = 'intrare_formular' placeholder="nume" />
+        <input id = 'intrare_email' class = 'intrare_formular' placeholder="e-mail" />
+        <input id = 'intrare_telefon' class = 'intrare_formular' placeholder="telefon" />
+        <textarea id = 'intrare_mesaj' class = 'intrare_text' placeholder="Introdu mesajul"></textarea>
         <button id = 'buton_submit'>Trimite</button>
-        <div id ='vertical_rule'></div>
-    </div>
+    </form>
 </div>
+<script src = 'sources/form.js'></script>
+<script src = 'bundle.js'></script>
 </body>
 </html>

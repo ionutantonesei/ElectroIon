@@ -357,6 +357,10 @@ p .afisare_valoare_rezistenta{
 }
 
 /*pagina contact.html*/
+body{
+    background: linear-gradient(to bottom right, darkgreen, lightgreen);
+    height: 100vh;
+}
 input{
     border: none;
     box-shadow: 1px 1px 10px 5px lightgreen;
@@ -366,20 +370,21 @@ input:hover{
 }
 
 .formular{
+    opacity: 80%;
     position: absolute;
-    top: 25vh;
-    left: 15vw;
-    height: 70wh;
-    width: 80vw;
+    top: 25%;
+    left: 10%;
+    height: 60%;
+    width: 80%;
 }
-.campuri_intrari{
+#campuri_intrari{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    top: 0vh;
-    left: 0vw;
-    height: 60vh;
-    width: 70vw;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
 }
 .intrare_formular{
     margin-top: 2%;
