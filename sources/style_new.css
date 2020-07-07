@@ -43,7 +43,7 @@
     margin-left: 0vw;
     padding-left: 15vw;
     list-style-type: none;
-    font-size: 24px;
+    font-size: 16px;
 }
 a.meniu_sus{
     display: flex;
@@ -357,10 +357,6 @@ p .afisare_valoare_rezistenta{
 }
 
 /*pagina contact.html*/
-body{
-    background: linear-gradient(to bottom right, darkgreen, lightgreen);
-    height: 100vh;
-}
 input{
     border: none;
     box-shadow: 1px 1px 10px 5px lightgreen;
