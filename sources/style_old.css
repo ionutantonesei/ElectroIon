@@ -1,0 +1,474 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	background-color:#DEB887;
+	background-repeat: no-repeat;
+}
+.titlu {
+	position: relative;
+	text-align: center;
+	color: #8f8fdb;
+	text-shadow: 2px 2px #ff0000;
+}
+.banner {
+	background-color: #8A2BE2;
+}
+ul#meniu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+}
+li.meniu {
+	float: left;
+	padding-left : 20px;
+}
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	font-family: 'Aldrich';
+	font-size: 22px;
+	padding: 1vw 6vw;
+	text-decoration: none;
+}
+li a:hover {
+	transition: 0.5s;
+	color: white;
+	background-color: #111;
+	font-family: 'Aldrich';
+	font-size: 22px;
+	box-shadow: 5px 10px 10px 1px;
+	border-radius: 25px;
+}
+.zona_text{
+	text-indent: 2rem;
+	padding-left: 10px;
+	margin-right: 10px;
+	position : absolute;
+	left : 20px;
+	top : 200px;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+#lista1{
+	float: top;
+	background-color: none;
+	line-height: 3rem;
+}
+#lista2{
+	float: top;
+	background-color: none;
+	line-height: 2rem;
+	list-style-type: none;
+	margin-right: 10px;
+}
+.frame{
+	position: fixed;
+	top: 25%;
+	left: 10%;
+	height: 60%;
+	width: 70%;
+	border: 1px solid green;
+}
+#cadru{
+	position: absolute;
+	top:0%;
+	left:5%;
+	height:100%;
+	width: 90%;
+}
+hr{
+	width: 80vw;
+}
+#buton_urmator{
+	position: absolute;
+	left: 95%;
+	top: 50%;
+	height: 5vh;
+	width: 5vh;
+}
+#buton_anterior{
+	position: absolute;
+	left: 1%;
+	top: 50%;
+	height: 5vh;
+	width: 5vh;
+}
+canvas {
+	position: fixed;
+	top: 45%;
+	left: 1%;
+	height: 50%;
+	width: 50%;
+}
+footer{
+	position: fixed;
+	top: 930px;
+	left: 1680px;
+}
+#container{
+	position: fixed;
+	border: 1px solid green;
+	height: 30%;
+	width: 50%;
+	top: 50%;
+	left: 50%;
+}
+#schimbare_culoare_1 {
+	position: absolute;
+	top: 5%;
+	left: 1%;
+	height: 20%;
+	width: 50%;
+	margin: 0%;
+	border-radius : 5px;
+	font-size: 16px;
+}
+#schimbare_culoare_buton_1{
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	height: 20%;
+	width: 40%;
+	background-color: darkolivegreen;
+	color : white;
+	font-family: Verdana;
+	border-radius: 5px;
+	margin-left: 5%;
+}
+#schimbare_culoare_2 {
+	position: absolute;
+	top: 50%;
+	left: 1%;
+	height: 20%;
+	width: 50%;
+	margin: 0%;
+	border-radius : 5px;
+	font-size: 16px;
+}
+#schimbare_culoare_buton_2{
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	height: 20%;
+	width: 40%;
+	background-color: darkolivegreen;
+	color : white;
+	font-family: Verdana;
+	border-radius: 5px;
+	margin-left: 5%;
+}
+#intrebari{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 80%;
+	height: 60%;
+	border: 1px solid red;
+}
+.formular{
+	display:flex;
+	display: column;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	border-radius: 25px;
+	box-shadow: 10px 10px 15px 5px black;
+	top: 20%;
+	left: 15%;
+	height: 70%;
+	width: 60%;
+}
+.campuri_intrari{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	padding-left: 1%;
+}
+.intrare_text{
+	height: 25%;
+	resize: horizontal;
+}
+.intrare, .intrare_text{
+	background: transparent;
+	border: groove whitesmoke;
+	border-top: 10px;
+	border-right: 0px;
+	margin-top: 8%;
+	margin-left: 5%;
+	color: white;
+}
+#buton_submit{
+	margin-top: 5%;
+	margin-left: 10%;
+	height: 10%;
+}
+#intrebare_1{
+	text-align: center;
+	font-size: 24px;
+	font-family: Verdana;
+	font-weight: bold;
+}
+.raspuns{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	height: 40%;
+	padding-top: 10%;
+	width: 80%;
+	top: 0%;
+	left: 10%;
+}
+label[for = 'raspuns_1']{
+	font-size: 24px;
+	font-family: Verdana;
+}
+label:hover[for = 'raspuns_1']{
+	transition: 0.5s;
+	background-color: rgb(146, 165, 165);
+}
+label[for = 'raspuns_2']{
+	font-size: 24px;
+	font-family: Verdana;
+}
+label:hover[for = 'raspuns_2']{
+	transition: 0.5s;
+	background-color: rgb(146, 165, 165)
+}
+label[for = 'raspuns_3']{
+	font-size: 24px;
+	font-family: Verdana;
+}
+label:hover[for = 'raspuns_3']{
+	transition: 0.5s;
+	background-color: rgb(146, 165, 165);
+}
+li.raspuns{
+	position: relative;
+	display: block;
+	float: top;
+	padding-top: 10px;
+}
+#buton_intrebare_1{
+	position: absolute;
+	left: 30%;
+	top: 85%;
+	height: 10%;
+	width: 40%;
+	background-color: salmon;
+}
+@media screen and (min-width: 1px) and (max-width: 600px){
+	.frame{
+		position: fixed;
+		top: 45%;
+		left: 0%;
+		height: 50%;
+		width: 100%;
+		border: 1px solid green;
+	}
+	#cadru{
+		position: absolute;
+		top:10%;
+		left:12%;
+		height:80%;
+		width: 75%;
+	}
+	#buton_urmator{
+		position: absolute;
+		left: 86%;
+		top: 50%;
+		height: 5vh;
+		width: 5vh;
+	}
+	#buton_anterior{
+		position: absolute;
+		left: 1%;
+		top: 50%;
+		height: 5vh;
+		width: 5vh;
+	}
+	.formular{
+		display:flex;
+		flex-direction: column;
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		border-radius: 25px;
+		box-shadow: 10px 10px 15px 5px black;
+		top: 30%;
+		left: 15%;
+		height: 60%;
+		width: 60%;
+	}
+	.campuri_intrari{
+		position: absolute;
+		top: 10%;
+		left :10%;
+		display: flex;
+		flex-direction: column;
+		width: 60%;
+		height: 70%;
+	}
+	.intrare_text{
+		height: 25%;
+		resize: horizontal;
+	}
+	.intrare, .intrare_text{
+		background: transparent;
+		border: none;
+		margin-top: 8%;
+		margin-left: 5%;
+		color: white;
+	}
+	#buton_submit{
+		margin-top: 5%;
+		margin-left: 10%;
+		height: 10%;
+	}
+	#intrebari{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 40%;
+		left: 10%;
+		width: 80%;
+		height: 60%;
+		border: 1px solid red;
+	}
+	#intrebare_1{
+		text-align: center;
+		font-size: 16px;
+		font-family: Verdana;
+		font-weight: bold;
+	}
+	label[for = 'raspuns_1']{
+		font-size: 16px;
+		font-family: Verdana;
+	}
+	label:hover[for = 'raspuns_1']{
+		transition: 0.5s;
+		background-color: rgb(146, 165, 165);
+	}
+	label[for = 'raspuns_2']{
+		font-size: 16px;
+		font-family: Verdana;
+	}
+	label:hover[for = 'raspuns_2']{
+		transition: 0.5s;
+		background-color: rgb(146, 165, 165)
+	}
+	label[for = 'raspuns_3']{
+		font-size: 16px;
+		font-family: Verdana;
+	}
+	label:hover[for = 'raspuns_3']{
+		transition: 0.5s;
+		background-color: rgb(146, 165, 165);
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 1025px){
+	.frame{
+		position: fixed;
+		top: 45%;
+		left: 20%;
+		height: 50%;
+		width: 60%;
+		border: 1px solid green;
+	}
+	#cadru{
+		position: absolute;
+		top:0%;
+		left:5%;
+		height:100%;
+		width: 90%;
+	}
+	.formular{
+		display:flex;
+		display: row;
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		border-radius: 25px;
+		box-shadow: 10px 10px 15px 5px black;
+		top: 50%;
+		left: 15%;
+		height: 45%;
+		width: 60%;
+	}
+	.campuri_intrari{
+		position: absolute;
+		top: 1%;
+		left :5%;
+		display: flex;
+		flex-direction: column;
+		width: 60%;
+		height: 80%;
+	}
+	.intrare_text{
+		height: 10%;
+		resize: none;
+	}
+	.intrare, .intrare_text{
+		background: transparent;
+		border: none;
+		color: white;
+	}
+	#buton_submit{
+		position: absolute;
+		top: 40%;
+		left: 100%;
+		margin-top: 5%;
+		margin-left: 10%;
+		height: 25%;
+		width: 25%;
+	}
+	#intrebari{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 40%;
+		left: 10%;
+		width: 80%;
+		height: 60%;
+		border: 1px solid red;
+	}
+	#intrebare_1{
+		text-align: center;
+		font-size: 16px;
+		font-family: Verdana;
+		font-weight: bold;
+	}
+	label[for = 'raspuns_1']{
+		font-size: 16px;
+		font-family: Verdana;
+	}
+	label:hover[for = 'raspuns_1']{
+		transition: 0.5s;
+		background-color: rgb(146, 165, 165);
+	}
+	label[for = 'raspuns_2']{
+		font-size: 16px;
+		font-family: Verdana;
+	}
+	label:hover[for = 'raspuns_2']{
+		transition: 0.5s;
+		background-color: rgb(146, 165, 165)
+	}
+	label[for = 'raspuns_3']{
+		font-size: 16px;
+		font-family: Verdana;
+	}
+	label:hover[for = 'raspuns_3']{
+		transition: 0.5s;
+		background-color: rgb(146, 165, 165);
+	}
+}
+@media screen and (min-width: 3839px) and (max-width: 3841px){
+	footer{
+		position: fixed;
+		top: 2100px;
+		left: 3600px;
+	}
+}
