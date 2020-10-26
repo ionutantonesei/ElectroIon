@@ -224,92 +224,116 @@ footer{
 }
 #container{
     position: fixed;
-    height: 60vh;
+    height: 70vh;
     width: 80vw;
-    top:30vh;
-    left:10vw;
-    border: 1px solid red;
+    top:25vh;
+    left:2vw;
 }
 #desen_rezistenta{
     position: absolute;
-    top:7.5%;
-    left:5%;
-    height: 10%;
-    width: 20%;
-    border-radius: 25% 25%;
-    background: palegoldenrod;
-}
-#culori_rezistenta1{
-    position: absolute;
+    max-width: 50vw;
+    height: auto;
     top:5vh;
-    left:5vw;
-    height: 5vh;
-    width: 0.7vw;
-    background: black;
+    left:0vw;
 }
-#culori_rezistenta2{
+.controale-container{
+    border: 1px solid gray;
     position: absolute;
-    top:5vh;
-    left:10vw;
-    height: 5vh;
-    width: 0.7vw;
-    background: var(--culoare_0);
-}
-#culori_rezistenta3{
-    position: absolute;
-    top:5vh;
-    left:14vw;
-    height: 5vh;
-    width: 0.7vw;
-    background: var(--culoare_0);
-}
-#culori_rezistenta4{
-    position: absolute;
-    top:5vh;
-    left:18vw;
-    height: 5vh;
-    width: 0.7vw;
-    background: var(--culoare_0);
-}
-#controale{
-    position: absolute;
-    top:5vh;
-    left:30vw;
+    left: 40vw;
+    width: 40vw;
     height: 50vh;
-    width: 70vh;
 }
-.control{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    top: 0%;
-    left: 0%;
-    margin-top:3%;
-    height: 5%;
-    width: 30%;
+button{
+    width:3vw;
+    height:5vh;
 }
-.control_buton{
+.A-container{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 10%;
-    margin-left: 10%;
-    margin-top: 3%;
-    box-shadow: 1px 1px 3px 3px greenyellow;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    top: 5vh;
+    left: 5vh;
+    width: 35vw;
+    height: 5vh;
+    border: 1px solid red;
+}
+.B-container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    top: 15vh;
+    left: 5vh;
+    width: 35vw;
+    height: 5vh;
+    border: 1px solid blue;
+}
+.C-container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    top: 25vh;
+    left: 5vh;
+    width: 35vw;
+    height: 5vh;
+    border: 1px solid green;
+}
+.D-container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    top: 35vh;
+    left: 5vh;
+    width: 35vw;
+    height: 5vh;
+    border: 1px solid purple;
+}
+.A-negru{
+    background-color: var(--culoare_0);
+}
+.A-maro{
+    background-color: var(--culoare_1);
+}
+.A-rosu{
+    background-color: var(--culoare_2);
+}
+.A-portocaliu{
+    background-color: var(--culoare_3);
+}
+.A-galben{
+    background-color: var(--culoare_4);
+}
+.A-verde{
+    background-color: var(--culoare_5);
+}
+.A-albastru{
+    background-color: var(--culoare_6);
+}
+.A-purpuriu{
+    background-color: var(--culoare_7);
+}
+.A-gri{
+    background-color: var(--culoare_8);
+}
+.A-alb{
+    background-color: var(--culoare_9);
 }
 .rezultat{
     position: absolute;
     top: 50vh;
-    left: 10vw;
+    left: 0vw;
     height: 5vh;
     width: 15vw;
 }
 p .afisare_valoare_rezistenta{
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    height: 5%;
-    width: 20%;
+    position: fixed;
+    top: 1vh;
+    left: 5vw;
+    height: 5vh;
+    width: 5vw;
 }
 
 /*pagina contact.html*/
