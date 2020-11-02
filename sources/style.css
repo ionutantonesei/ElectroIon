@@ -225,6 +225,8 @@ footer{
     --culoare_7: purple;
     --culoare_8: gray;
     --culoare_9: white;
+    --culoare_10: gold;
+    --culoare_11: silver;
 }
 #container{
     position: fixed;
@@ -243,7 +245,7 @@ footer{
 .controale-container{
     border: 1px solid gray;
     position: absolute;
-    left: 40vw;
+    left: 50vw;
     width: 40vw;
     height: 50vh;
 }
@@ -288,7 +290,7 @@ button{
     display: flex;
     flex-direction: row;
     position: absolute;
-    justify-content: space-between;
+    justify-content: space-evenly;
     top: 35vh;
     left: 5vh;
     width: 35vw;
@@ -324,6 +326,12 @@ button{
 }
 .A-alb{
     background-color: var(--culoare_9);
+}
+.A-argintiu{
+    background-color: var(--culoare_11);
+}
+.A-auriu{
+    background-color: var(--culoare_10);
 }
 .rezultat{
     position: absolute;
