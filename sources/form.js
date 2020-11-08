@@ -2,20 +2,20 @@ window.addEventListener("DOMContentLoaded", function() {
 
     // get the form elements defined in your form HTML above
     
-    var form = document.getElementById("form");
-    var button = document.getElementById("button");
-    var status = document.getElementById("my-form-status");
+    var form = document.getElementById("campuri_intrari");
+    //var button = document.getElementById("button");
+    var status = document.getElementById("status");
 
     // Success and Error functions for after the form is submitted
     
     function success() {
       form.reset();
-      button.style = "display: none ";
-      status.innerHTML = "Thanks!";
+    //  button.style = "display: none ";
+      status.innerHTML = "A fost trimis cu succes!";
     }
 
     function error() {
-      status.innerHTML = "Oops! There was a problem.";
+      status.innerHTML = "A aparut o problema.";
     }
 
     // handle the form submission event
