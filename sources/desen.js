@@ -42,7 +42,7 @@ const bDauriu = document.getElementById('bD-auriu').addEventListener('click',fun
 const bDargintiu = document.getElementById('bD-argintiu').addEventListener('click',function(){bD = '±10%';document.querySelector('#culori_rezistenta4').style.cssText = 'background: silver;';});
 
 function rezultat(){
-    valoare = bA+bB+bC+'kΩ'+bD;
+    valoare = bA+bB+bC+'Ω'+bD;
     valoare_afisare =  document.createElement('P');
     valoare_afisare.innerHTML = valoare;
     document.body.appendChild(valoare_afisare);
